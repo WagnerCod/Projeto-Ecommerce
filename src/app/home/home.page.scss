@@ -1,27 +1,144 @@
-#container {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Quicksand:wght@400&family=Share+Tech+Mono&display=swap');
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
+ion-content {
+  width: 100%;
   margin: 0;
 }
 
-#container a {
-  text-decoration: none;
+.tituloHeader {
+  color: #01976a;
 }
+
+.container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.menu {
+ 
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  text-overflow: clip;
+  overflow: scroll;
+  white-space: nowrap;
+}
+
+.menu::-webkit-scrollbar {
+  display: none;
+}
+
+.menu div {
+  border: 2px solid rgb(33, 180, 58);
+  padding: 0px 10px 0px 10px;
+  border-radius: 30px;
+}
+
+.menu div p{
+  padding-top: 15px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.section {
+  margin-top: 10%;
+}
+
+.ionCardBoi {
+  background-color: rgb(101, 187, 107);
+  border-radius: 10px;
+}
+
+.tituloBoi {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.sobreBoi {
+  font-size: 16px;
+  font-family: 'Noto Sans', sans-serif;
+  color: white;
+}
+
+.cardBoi {
+  display: flex;
+  align-items: center;
+}
+
+.imgBoi {
+  width: 50%;
+  padding: 0;
+}
+
+@media (max-width: 450px) {
+  .sobreBoi{
+    font-size: 12px;
+  }
+  .imgBoi{
+    width: 40%;
+  }
+}
+
+.containerSelecaoDoDia{
+  margin-top: 10%;
+}
+
+.titulosSelecao{
+display: flex;
+justify-content: space-between;
+}
+
+.tituloSelecao{
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 20px;
+}
+
+.verTodos{
+  color: rgba(252, 198, 50, 0.864);
+}
+
+.ionCardSelecao{
+ border-radius: 10px;
+}
+
+ .ionCardSelecao > .imgSelecao{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.slideSelecao {
+  display: flex;
+  justify-content: space-around;
+  overflow-x: scroll;
+  text-overflow: clip;
+  width: 100%;
+  margin: 0;
+  justify-content: flex-start;
+}
+
+
+.slide {
+  width: 100%;
+  flex: 0 0 50%;
+  /* Cada slide ocupa 100% da largura do contêiner */
+  padding: 0px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.racaBoiSelecao{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.racaBoiSelecao span{
+  color: #01976a;
+}
+
+
+

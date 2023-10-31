@@ -1,20 +1,95 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="true" mode="ios">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title class="tituloHeader">BF Ecommerce</ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+  <ion-header collapse="condense" mode="ios">
+    <ion-toolbar class="header">
+      <ion-title class="tituloHeader" size="large">BF ECommerce</ion-title>
+      <button (click)="login()">Fazer login</button>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="container">
+
+    <div class="menu">
+      <div>
+        <p>coleções</p>
+      </div>
+      <div>
+        <p>Imoveis</p>
+      </div>
+      <div>
+        <p>Fazendas</p>
+      </div>
+      <div (click)="sobreNos()">
+        <p><span class="sobre">Sobre</span> Nós</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <ion-card class="ionCardBoi">
+        <ion-card-header>
+          <ion-card-title class="tituloBoi">O agropecuário</ion-card-title>
+        </ion-card-header>
+        <div class="cardBoi">
+          <ion-card-content class="sobreBoi">
+            Descubra uma seleção requintada de produtos e soluções de primeira linha para atender às demandas do
+            seu negócio agropecuário
+          </ion-card-content>
+          <img class="imgBoi" alt="Silhouette of mountains" src="../../assets/imgs/boi.png" />
+        </div>
+      </ion-card>
+
+      <div class="containerSelecaoDoDia">
+        <div class="titulosSelecao">
+          <h5 class="tituloSelecao">Seleção do dia</h5>
+          <h4 class="tituloSelecao"><span class="verTodos">Ver todos</span></h4>
+        </div>
+
+        <div class="slideSelecao">
+
+          
+          <div class="slide">
+            <ion-card class="ionCardSelecao" lines="none">
+              <img class="imgSelecao"  src="../../assets/imgs/fotos-boi/boi11.png" alt="">
+              <ion-card-content class="racaBoiSelecao">Angus <span>$3000</span>
+              </ion-card-content>
+            </ion-card>
+          </div>
+          
+          <div class="slide">
+            <ion-card class="ionCardSelecao" lines="none">
+              <img class="imgSelecao"  src="../../assets/imgs/fotos-boi/boi3.png" alt="">
+              <ion-card-content class="racaBoiSelecao">Charolês <span>$2500</span></ion-card-content>
+            </ion-card>
+          </div>
+          <div class="slide">
+            <ion-card lines="none">
+              <img class="imgSelecao" src="../../assets/imgs/fotos-boi/boi1.png" alt="">
+              <ion-card-content class="racaBoiSelecao">WAGYU <span>$5000</span></ion-card-content>
+            </ion-card>
+          </div>
+          
+          <div class="slide">
+            <ion-card class="ionCardSelecao" lines="none">
+              <img class="imgSelecao" src="../../assets/imgs/fotos-boi/boi4.png" alt="">
+              <ion-card-content class="racaBoiSelecao">Hereford <span>$2500</span>
+              </ion-card-content>
+            </ion-card>
+          </div>
+
+          <div class="slide">
+            <ion-card class="ionCardSelecao" lines="none">
+              <img class="imgSelecao" src="../../assets/imgs/fotos-boi/boi5.png" alt="">
+              <ion-card-content class="racaBoiSelecao">Galloway <span>$2000</span></ion-card-content>
+            </ion-card>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
   </div>
 </ion-content>

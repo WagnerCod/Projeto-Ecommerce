@@ -24,3 +24,14 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Kawi&family=Noto+Sans:wght@300&family=Titillium+Web:wght@600&display=swap');
+
+.buttonsHeader {
+    background: none;
+    width: 46px;
+  }
+  
+  .iconsHeader {
+    font-size: 2.4em;
+  }

@@ -1,0 +1,99 @@
+.sobre {
+  color: #01976a;
+}
+
+.iconsHeader {
+  color: #01976a;
+}
+
+.historia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo {
+  text-align: start !important;
+  font-size: 30px;
+  color: #01976a;
+  margin-left: 19px;
+  font-family: 'Titillium Web', sans-serif;
+
+}
+
+.texto {
+  font-family: 'Noto Sans', sans-serif;
+  text-align: justify;
+  line-height: 1.7;
+}
+
+.linhaTexto {
+  text-align: center;
+  width: 90%;
+  border: 1px solid rgb(200, 200, 200);
+}
+
+.divForm {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #01976a;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+
+.descForm {
+  color: white;
+  font-size: 1.7em;
+  font-family: 'Titillium Web', sans-serif;
+  justify-content: center;
+  margin-left: 10%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  width: 90%;
+  background-color: white;
+  color: black;
+  border: 1px solid rgb(172, 172, 172);
+  margin: 10px 0px 10px 0px;
+  font-size: 1.1em;
+  padding: 0px;
+  border-radius: 5px;
+  height: 40px;
+}
+
+.enviar {
+  width: 50%;
+  margin-top: 10px;
+  padding: 15px;
+  color: #01976a;
+  background: white;
+  font-size: 15px;
+  font-family: 'Titillium Web', sans-serif;
+  border-radius: 4px;
+  text-align: center;
+}
+
+@media (max-width: 450px) {
+  .divForm {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .descForm {
+    text-align: center;
+  }
+}

@@ -1,0 +1,60 @@
+<ion-header [translucent]="true" mode="ios">
+  <ion-toolbar>
+    <ion-title class="sobre">Sobre Nós</ion-title>
+    <ion-buttons slot="end">
+      <button aria-label="Selecione" ion-button icon-only class="buttonsHeader" (click)="modalDimiss()">
+        <ion-icon class="iconsHeader" name="close-circle-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense" mode="ios">
+    <ion-toolbar>
+      <ion-title class="sobre" size="large">Sobre Nós</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-item lines="none">
+    <ion-img src="../../assets/imgs/matrizBf.png"></ion-img>
+  </ion-item>
+  <div class="container">
+
+    <h2 class="titulo">Nossa História</h2>
+
+    <div class="historia">
+      <div class="linhaTexto">
+        <p class="texto">Em 02 de junho de 1982, fomos predestinados a plantar a semente promissora na fazenda arrendada
+          no
+          município de Rondonópolis-MT, cujo nome da propriedade (Bom Futuro), nos guiaria ao nosso registro
+          como empresa e ao propósito que acreditamos.
+          <br><br>
+          A Bom Futuro desenvolve o planejamento estratégico das atividades na capital Cuiabá-MT, sede da
+          empresa. As atividades são distribuídas em todo o estado, gerando desenvolvimento e inúmeras
+          oportunidades para centenas de municípios.
+          <br><br>
+          A Bom Futuro, é advinda da agricultura. A expertise na área, auxílio da tecnologia e respeito ao meio
+          ambiente aliadas a persistência e muito trabalho, pautaram o crescimento da empresa em seus longos
+          anos de atividade. Ações como essas, garantiram o destaque mundial em produtividade sustentável,
+          possibilitando a atuação em 7 áreas; agricultura, pecuária, piscicultura, sementes, energia,
+          aeroportuário e imobiliário</p>
+      </div>
+    </div>
+
+    <div class="divForm">
+
+      <h4 class="descForm">Cadastre e Receba <Span class="descForm2">Nossas novidades</Span></h4>
+
+      <div class="form">
+        <input class="input" placeholder="nome" type="text">
+        <input class="input" placeholder="E-mail" type="email">
+        <button class="enviar">Enviar</button>
+      </div>    
+    </div>
+
+
+  </div>
+
+</ion-content>
