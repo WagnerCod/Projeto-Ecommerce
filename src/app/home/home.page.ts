@@ -41,5 +41,6 @@ export class HomePage {
   completoPag() {
     this.navCrl.navigateForward("/complemento")
   }
+  
 
 }

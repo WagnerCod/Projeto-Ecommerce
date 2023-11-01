@@ -1,7 +1,7 @@
 <ion-content [fullscreen]="true">
 
   <div class="div-img-bf">
-    <img class="logoBf" src="../../assets/img/bfWhite.png" alt="">
+    <img class="logoBf" src="../../assets/imgs/bfWhite.png" alt="">
   </div>
   <h3 class="titulo">Bem vindo ao BF Ecommerce</h3>
 
@@ -26,12 +26,17 @@
     <button class="entrar" (click)="login()"><span class="span-entrar">ENTRAR</span></button>
   </div>
 
-  <div class="div-button-enviar">
-    <button class="entrar" (click)="loginGoogle()"><span class="span-entrar">ENTRAR com google</span></button>
+
+  <div class="divLogarGoogle">
+    <button  class="buttonLogarGoogle" (click)="loginGoogle()">
+      <ion-icon style="color: #4285F4;" name="logo-google"></ion-icon>
+    </button>
   </div>
+
   <div class="div-button-enviar">
     <button class="entrar" (click)="loginGoogle()"><span class="span-entrar">Criar conta</span></button>
   </div>
+  
 
   <!-- <div class="footerLogin" [hidden]="sumirElemento">
     <button (click)="scanner()" class="button-scanner">
