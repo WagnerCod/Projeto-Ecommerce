@@ -41,6 +41,9 @@ export class HomePage {
   completoPag() {
     this.navCrl.navigateForward("/complemento")
   }
-  
+
+  pagDesafiolucas(){
+    this.navCrl.navigateForward("desafiolucas");
+  }
 
 }

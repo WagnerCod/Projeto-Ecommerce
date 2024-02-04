@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>desafiolucas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">desafiolucas</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div *ngFor="let item of forCarros">
+    <ion-input placeholder="" [(ngModel)]="item.MARCA"></ion-input>
+    <ion-input placeholder="" [(ngModel)]="item.MODELO"></ion-input>
+    <ion-input placeholder="" [(ngModel)]="item.ANO"></ion-input>
+    <ion-input placeholder="" [(ngModel)]="item.PRECO"></ion-input>
+  </div>
+
+
+  <ion-button (click)="salvar()">SALVAR</ion-button>
+</ion-content>
